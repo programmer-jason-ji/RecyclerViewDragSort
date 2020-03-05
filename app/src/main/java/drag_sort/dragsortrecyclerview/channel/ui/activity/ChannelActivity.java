@@ -48,7 +48,7 @@ public class ChannelActivity extends AppCompatActivity implements ChannelAdapter
         channelRecyler.setAdapter(mAdapter);
         //create ItemTouchHelper
         mTouchHelper = new ItemTouchHelper(new MyOnToucheCallBack(mAdapter));
-        //attach到RecyclerView中
+        //attach touchhelper into RecyclerView 
         mTouchHelper.attachToRecyclerView(channelRecyler);
         mAdapter.setOnStartDragListener(this);
     }
