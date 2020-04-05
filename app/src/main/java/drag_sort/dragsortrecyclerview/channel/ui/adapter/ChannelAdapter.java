@@ -151,7 +151,7 @@ public class ChannelAdapter extends RecyclerView.Adapter<MyViewHolder> implement
                     return true;
                 }
             });
-            //enable sort
+            //enable sort, can placed in onCreateViewHolder for performace 
             holder.itemView.setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
